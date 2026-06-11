@@ -1,0 +1,52 @@
+:root {
+  font-family:
+    'Sarabun',
+    'Noto Sans Thai',
+    'Segoe UI',
+    sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #2e2721;
+  background:
+    radial-gradient(circle at top, rgba(231, 172, 103, 0.25), transparent 24%),
+    linear-gradient(180deg, #fdf6ea 0%, #f4ecdf 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100svh;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+#root {
+  min-height: 100svh;
+}
