@@ -1,31 +1,37 @@
-# krisphy
+# Krisphy (Somjeed AI) — Receipt & Ledger Tracking
 
-Mobile-first foundation for Somjeed AI Phase 1.
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![LINE API](https://img.shields.io/badge/LINE_API-00C300?style=for-the-badge&logo=line&logoColor=white)
+![Fintech](https://img.shields.io/badge/Domain-Fintech-0ea5e9?style=for-the-badge)
 
-## Structure
+> **Snap a receipt → auto expense log.** LINE-integrated receipt tracking for Thai SMEs.
 
-- `app/` React + Vite mobile-first frontend for the 3 main flows
-- `docs/` product and implementation planning artifacts
+### Demo
 
-## Current scope
+![Demo](https://via.placeholder.com/1280x640/0f172a/38bdf8?text=Krisphy+—+Receipt+Tracking+Demo+—+Add+docs/demo.gif)
 
-- Flow 1 mobile-first capture screen for receipt/slip confirmation
-- Flow 2 text-entry screen for AI-assisted ledger extraction
-- Flow 3 daily summary screen for nightly LINE push preview
+### Architecture
 
-## Run
-
-```bash
-cd app
-npm install
-npm run dev
+```mermaid
+graph LR
+  A[LINE Message] --> B[LINE Webhook]
+  B --> C[Receipt OCR Parser]
+  C --> D[(Ledger DB)]
+  D --> E[Auto Expense Reports]
 ```
 
-## Verify
+### Results
 
-```bash
-cd app
-npm test
-npm run build
-npm run lint
-```
+| Metric | Value |
+|---|---|
+| **Integration** | LINE API native |
+| **Automation** | Receipt → ledger, zero manual entry |
+
+
+---
+
+**Phirawit Jitnarong — Strategic Full-Stack & AI Engineer**
+
+xme176@gmail.com · 092-551-0427 · [LinkedIn](https://www.linkedin.com/in/%E0%B8%9E%E0%B8%B5%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%8A%E0%B8%8D%E0%B9%8C-%E0%B8%88%E0%B8%B4%E0%B8%95%E0%B8%93%E0%B8%A3%E0%B8%87%E0%B8%84%E0%B9%8C-0000393a4) · [Fastwork](https://fastwork.co/user/bravforcode?source=search)
+
+> Hiring for this stack? Let's talk — production hardened, 300k+ users shipped.
